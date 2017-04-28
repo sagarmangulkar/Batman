@@ -10,9 +10,10 @@ import UIKit
 
 class PlayViewController: UIViewController {
 
+    @IBOutlet var imageGifBatmanRunning: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imageGifBatmanRunning.loadGif(name: "batman_run")
         // Do any additional setup after loading the view.
     }
 

@@ -19,6 +19,8 @@
 		525BCAD91EB2CBB000358479 /* image_Play_Again_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAD51EB2CBB000358479 /* image_Play_Again_Button.png */; };
 		525BCADA1EB2CBB000358479 /* start_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAD61EB2CBB000358479 /* start_button.png */; };
 		525BCADD1EB2CE9A00358479 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BCADC1EB2CE9A00358479 /* PlayViewController.swift */; };
+		525BCADF1EB2CFD400358479 /* batman_run.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCADE1EB2CFD400358479 /* batman_run.gif */; };
+		525BCAE11EB2D0C100358479 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BCAE01EB2D0C100358479 /* Swift+Gif.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		525BCAD51EB2CBB000358479 /* image_Play_Again_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_Play_Again_Button.png; sourceTree = SOURCE_ROOT; };
 		525BCAD61EB2CBB000358479 /* start_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_button.png; sourceTree = SOURCE_ROOT; };
 		525BCADC1EB2CE9A00358479 /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		525BCADE1EB2CFD400358479 /* batman_run.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = batman_run.gif; sourceTree = SOURCE_ROOT; };
+		525BCAE01EB2D0C100358479 /* Swift+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 				525BCAA51EB2C9E300358479 /* AppDelegate.swift */,
 				525BCAA71EB2C9E300358479 /* ViewController.swift */,
 				525BCADC1EB2CE9A00358479 /* PlayViewController.swift */,
+				525BCAE01EB2D0C100358479 /* Swift+Gif.swift */,
 				525BCAA91EB2C9E300358479 /* Main.storyboard */,
 				525BCAAC1EB2C9E300358479 /* Assets.xcassets */,
 				525BCAAE1EB2C9E300358479 /* LaunchScreen.storyboard */,
@@ -140,6 +145,7 @@
 		525BCADB1EB2CBC000358479 /* Supporting_files */ = {
 			isa = PBXGroup;
 			children = (
+				525BCADE1EB2CFD400358479 /* batman_run.gif */,
 				525BCAD61EB2CBB000358479 /* start_button.png */,
 				525BCAD51EB2CBB000358479 /* image_Play_Again_Button.png */,
 				525BCAD41EB2CBB000358479 /* image_blackball.png */,
@@ -256,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				525BCAB01EB2C9E300358479 /* LaunchScreen.storyboard in Resources */,
+				525BCADF1EB2CFD400358479 /* batman_run.gif in Resources */,
 				525BCAD81EB2CBB000358479 /* image_blackball.png in Resources */,
 				525BCAD91EB2CBB000358479 /* image_Play_Again_Button.png in Resources */,
 				525BCAAD1EB2C9E300358479 /* Assets.xcassets in Resources */,
@@ -286,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525BCAE11EB2D0C100358479 /* Swift+Gif.swift in Sources */,
 				525BCAA81EB2C9E300358479 /* ViewController.swift in Sources */,
 				525BCADD1EB2CE9A00358479 /* PlayViewController.swift in Sources */,
 				525BCAA61EB2C9E300358479 /* AppDelegate.swift in Sources */,
