@@ -25,6 +25,7 @@
 		525BCAE51EB3286700358479 /* batman_stand.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAE31EB3286700358479 /* batman_stand.gif */; };
 		525BCAE71EB32A1100358479 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAE61EB32A1100358479 /* background.jpg */; };
 		525BCAE91EB32CAC00358479 /* jump_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAE81EB32CAC00358479 /* jump_button.png */; };
+		525BCAEB1EB401F600358479 /* wall_running_platform.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAEA1EB401F600358479 /* wall_running_platform.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		525BCAE31EB3286700358479 /* batman_stand.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = batman_stand.gif; sourceTree = SOURCE_ROOT; };
 		525BCAE61EB32A1100358479 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = SOURCE_ROOT; };
 		525BCAE81EB32CAC00358479 /* jump_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jump_button.png; sourceTree = SOURCE_ROOT; };
+		525BCAEA1EB401F600358479 /* wall_running_platform.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall_running_platform.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				525BCADC1EB2CE9A00358479 /* PlayViewController.swift */,
 				525BCAE01EB2D0C100358479 /* Swift+Gif.swift */,
 				525BCAA91EB2C9E300358479 /* Main.storyboard */,
+				525BCAEA1EB401F600358479 /* wall_running_platform.jpg */,
 				525BCAAC1EB2C9E300358479 /* Assets.xcassets */,
 				525BCAAE1EB2C9E300358479 /* LaunchScreen.storyboard */,
 				525BCAB11EB2C9E300358479 /* Info.plist */,
@@ -283,6 +286,7 @@
 				525BCAAD1EB2C9E300358479 /* Assets.xcassets in Resources */,
 				525BCAAB1EB2C9E300358479 /* Main.storyboard in Resources */,
 				525BCADA1EB2CBB000358479 /* start_button.png in Resources */,
+				525BCAEB1EB401F600358479 /* wall_running_platform.jpg in Resources */,
 				525BCAE71EB32A1100358479 /* background.jpg in Resources */,
 				525BCAD71EB2CBB000358479 /* game-over.png in Resources */,
 			);

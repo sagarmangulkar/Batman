@@ -10,13 +10,14 @@ import UIKit
 
 class PlayViewController: UIViewController {
 
-    @IBOutlet var imageGifBatmanRunning: UIImageView!
+    @IBOutlet var imageBatman: UIImageView!
     @IBOutlet var buttonJump: UIButton!
     @IBOutlet var imageBackground: UIImageView!
+    @IBOutlet var imageRunningPlatform: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageGifBatmanRunning.loadGif(name: "batman_run")
+        imageBatman.loadGif(name: "batman_run")
         // Do any additional setup after loading the view.
     }
 
@@ -26,7 +27,10 @@ class PlayViewController: UIViewController {
     }
     
     @IBAction func pushButtonJump(_ sender: Any) {
-        imageGifBatmanRunning.loadGif(name: "batman_jump")
+        imageBatman.loadGif(name: "batman_jump")
+        //sleep(1)
+    //    imageBatman.image = UIImage(named:"start_button.png")
+     //   imageBatman.loadGif(name: "batman_run")
     }
 
 }
