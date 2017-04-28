@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Play View Controller-->
         <scene sceneID="egx-oG-4P7">
             <objects>
-                <viewController id="CSD-od-JDx" sceneMemberID="viewController">
+                <viewController id="CSD-od-JDx" customClass="PlayViewController" customModule="Batman_The_Beginning" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T9i-kJ-dwz"/>
                         <viewControllerLayoutGuide type="bottom" id="Nvp-02-dZE"/>
@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9QH-Bh-kMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="533.60000000000002" y="125.4872563718141"/>
+            <point key="canvasLocation" x="598" y="125"/>
         </scene>
     </scenes>
     <resources>
