@@ -21,6 +21,10 @@
 		525BCADD1EB2CE9A00358479 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BCADC1EB2CE9A00358479 /* PlayViewController.swift */; };
 		525BCADF1EB2CFD400358479 /* batman_run.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCADE1EB2CFD400358479 /* batman_run.gif */; };
 		525BCAE11EB2D0C100358479 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BCAE01EB2D0C100358479 /* Swift+Gif.swift */; };
+		525BCAE41EB3286700358479 /* batman_jump.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAE21EB3286700358479 /* batman_jump.gif */; };
+		525BCAE51EB3286700358479 /* batman_stand.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAE31EB3286700358479 /* batman_stand.gif */; };
+		525BCAE71EB32A1100358479 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAE61EB32A1100358479 /* background.jpg */; };
+		525BCAE91EB32CAC00358479 /* jump_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAE81EB32CAC00358479 /* jump_button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		525BCADC1EB2CE9A00358479 /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		525BCADE1EB2CFD400358479 /* batman_run.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = batman_run.gif; sourceTree = SOURCE_ROOT; };
 		525BCAE01EB2D0C100358479 /* Swift+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
+		525BCAE21EB3286700358479 /* batman_jump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = batman_jump.gif; sourceTree = SOURCE_ROOT; };
+		525BCAE31EB3286700358479 /* batman_stand.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = batman_stand.gif; sourceTree = SOURCE_ROOT; };
+		525BCAE61EB32A1100358479 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = SOURCE_ROOT; };
+		525BCAE81EB32CAC00358479 /* jump_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jump_button.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +153,10 @@
 		525BCADB1EB2CBC000358479 /* Supporting_files */ = {
 			isa = PBXGroup;
 			children = (
+				525BCAE81EB32CAC00358479 /* jump_button.png */,
+				525BCAE61EB32A1100358479 /* background.jpg */,
+				525BCAE31EB3286700358479 /* batman_stand.gif */,
+				525BCAE21EB3286700358479 /* batman_jump.gif */,
 				525BCADE1EB2CFD400358479 /* batman_run.gif */,
 				525BCAD61EB2CBB000358479 /* start_button.png */,
 				525BCAD51EB2CBB000358479 /* image_Play_Again_Button.png */,
@@ -262,12 +274,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				525BCAB01EB2C9E300358479 /* LaunchScreen.storyboard in Resources */,
+				525BCAE91EB32CAC00358479 /* jump_button.png in Resources */,
 				525BCADF1EB2CFD400358479 /* batman_run.gif in Resources */,
+				525BCAE41EB3286700358479 /* batman_jump.gif in Resources */,
 				525BCAD81EB2CBB000358479 /* image_blackball.png in Resources */,
+				525BCAE51EB3286700358479 /* batman_stand.gif in Resources */,
 				525BCAD91EB2CBB000358479 /* image_Play_Again_Button.png in Resources */,
 				525BCAAD1EB2C9E300358479 /* Assets.xcassets in Resources */,
 				525BCAAB1EB2C9E300358479 /* Main.storyboard in Resources */,
 				525BCADA1EB2CBB000358479 /* start_button.png in Resources */,
+				525BCAE71EB32A1100358479 /* background.jpg in Resources */,
 				525BCAD71EB2CBB000358479 /* game-over.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
