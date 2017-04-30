@@ -14,6 +14,7 @@ class PlayViewController: UIViewController {
     @IBOutlet var buttonJump: UIButton!
     @IBOutlet var imageBackground: UIImageView!
     @IBOutlet var imageRunningPlatform: UIImageView!
+    @IBOutlet var imageWhiteStrip: UIImageView!
     
     var imageBatmanString = "batman_run"
     var batmanRunString = "batman_run"
@@ -24,6 +25,10 @@ class PlayViewController: UIViewController {
         super.viewDidLoad()
         setHeroGif(tempImage: "batman_run")
         timerRun = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(run), userInfo: nil, repeats: false)
+        
+        var timerPlatform = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(movePlatform), userInfo: nil, repeats: true)
+        
+        imageWhiteStrip.frame.origin.x = 700
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,6 +63,23 @@ class PlayViewController: UIViewController {
         imageBatmanString = tempImage
     }
 
+    func movePlatform(){
+        UIView.animate(withDuration: 3, animations: {
+            var frameTemp = self.imageWhiteStrip.frame
+            frameTemp.origin.x = -500
+            self.imageWhiteStrip.frame = frameTemp
+        },completion:{
+            (finished: Bool) in
+          //  if(self.imageWhiteStrip.frame.origin.x < -200){
+                UIView.animate(withDuration: 0, animations: {
+                    var frameTemp = self.imageWhiteStrip.frame
+                    frameTemp.origin.x = 700
+                    self.imageWhiteStrip.frame = frameTemp
+                })
+            //}
+        })
+    }
+    
     func run(){
         setHeroGif(tempImage: "batman_run")
     }

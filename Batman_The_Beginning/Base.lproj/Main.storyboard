@@ -45,6 +45,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="335"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Road.jpg" id="gwr-yB-A13">
+                                <rect key="frame" x="0.0" y="311" width="667" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="batman_run.gif" id="3MS-gd-Gkd">
+                                <rect key="frame" x="33" y="195" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ND1-Wj-Ntm">
                                 <rect key="frame" x="41" y="28" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -53,12 +61,8 @@
                                     <action selector="pushButtonJump:" destination="CSD-od-JDx" eventType="touchUpInside" id="qSy-jA-LCL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="wall_running_platform.jpg" id="gwr-yB-A13">
-                                <rect key="frame" x="0.0" y="311" width="667" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="batman_run.gif" id="3MS-gd-Gkd">
-                                <rect key="frame" x="33" y="195" width="150" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="white.jpg" id="LuJ-So-IRU">
+                                <rect key="frame" x="575" y="342" width="240" height="5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -68,19 +72,21 @@
                         <outlet property="buttonJump" destination="ND1-Wj-Ntm" id="mue-uI-MfI"/>
                         <outlet property="imageBatman" destination="3MS-gd-Gkd" id="uf3-6o-fpD"/>
                         <outlet property="imageRunningPlatform" destination="gwr-yB-A13" id="wFg-xN-mEI"/>
+                        <outlet property="imageWhiteStrip" destination="LuJ-So-IRU" id="29p-Ik-Y4O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9QH-Bh-kMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="426" y="-21"/>
+            <point key="canvasLocation" x="425.5" y="-21.5"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Road.jpg" width="300" height="250"/>
         <image name="background.jpg" width="1920" height="1080"/>
         <image name="batman_run.gif" width="600" height="450"/>
         <image name="jump_button.png" width="231" height="231"/>
         <image name="start_button.png" width="315" height="149"/>
-        <image name="wall_running_platform.jpg" width="590" height="590"/>
+        <image name="white.jpg" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
