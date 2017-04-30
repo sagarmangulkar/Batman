@@ -21,17 +21,15 @@ class PlayViewController: UIViewController {
     var batmanRunString = "batman_run"
     var batmanJumpString = "jump.gif"
     private var timerRun: Timer?
+    var isBatmanJumped = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setHeroGif(tempImage: "batman_run")
         imageJocker.loadGif(name: "joker_running")
-        timerRun = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(run), userInfo: nil, repeats: false)
-        
-        var timerPlatform = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(movePlatform), userInfo: nil, repeats: true)
-        
         imageWhiteStrip.frame.origin.x = 700
-    }
+        initializeTimers()
+        }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -43,10 +41,19 @@ class PlayViewController: UIViewController {
         jump()
     }
     
-    func startTimerRun() {
+    func initializeTimers(){
+        timerRun = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(run), userInfo: nil, repeats: false)
+        
+        var timerPlatform = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(movePlatform), userInfo: nil, repeats: true)
+        
+        var timerCheckCollisionWithJoker = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(checkCollisionWithJoker), userInfo: nil, repeats: true)
+        
+        var timerMoveJoker = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(moveJoker), userInfo: nil, repeats: true)
+    }
+    
+    func startTimerRun(timeTemp: Double)-> Void {
         guard timerRun == nil else { return }
-        timerRun = Timer.scheduledTimer(timeInterval: 1.3, target: self, selector: #selector(run), userInfo: nil, repeats: false)
-
+        timerRun = Timer.scheduledTimer(timeInterval: timeTemp, target: self, selector: #selector(run), userInfo: nil, repeats: false)
     }
     
     func stopTimerRun() {
@@ -80,47 +87,63 @@ class PlayViewController: UIViewController {
                 })
             //}
         })
-        moveJoker()
     }
     
     func moveJoker(){
-        UIView.animate(withDuration: 3, animations: {
+        UIView.animate(withDuration: 0.2, animations: {
             var frameTemp = self.imageJocker.frame
-            frameTemp.origin.x = -100
+            frameTemp.origin.x = frameTemp.origin.x - 30
             self.imageJocker.frame = frameTemp
         },completion:{
             (finished: Bool) in
-            //  if(self.imageWhiteStrip.frame.origin.x < -200){
+              if(self.imageJocker.frame.origin.x < -100){
             UIView.animate(withDuration: 0, animations: {
                 var frameTemp = self.imageJocker.frame
-                frameTemp.origin.x = 700
+                frameTemp.origin.x = 1300
                 self.imageJocker.frame = frameTemp
             })
-            //}
+            }
         })
     }
     
     func run(){
         setHeroGif(tempImage: "batman_run")
+        self.isBatmanJumped = false
     }
     
     func jump(){
         stopTimerRun()
         setHeroGif(tempImage: "batman_jump")
-
-        UIView.animate(withDuration: 0.65, animations: {
+        self.isBatmanJumped = false
+        UIView.animate(withDuration: 1, animations: {
             var frameTemp = self.imageBatman.frame
-            frameTemp.origin.y = frameTemp.origin.y - 100
+            frameTemp.origin.y = frameTemp.origin.y - 200
             self.imageBatman.frame = frameTemp
         },completion:{
             (finished: Bool) in
-                UIView.animate(withDuration: 0.65, animations: {
+            self.isBatmanJumped = true
+                UIView.animate(withDuration: 1, animations: {
                     var frameTemp = self.imageBatman.frame
-                    frameTemp.origin.y = frameTemp.origin.y + 100
+                    frameTemp.origin.y = frameTemp.origin.y + 200
                     self.imageBatman.frame = frameTemp
                 })
         })
-        
-        startTimerRun()
+        startTimerRun(timeTemp: 2)
+    }
+    
+    func checkCollisionWithJoker(){
+        print("-----------------")
+        print(imageBatman.layer.frame.intersects(imageJocker.layer.frame))
+        print(!isBatmanJumped)
+        if(imageBatman.layer.frame.intersects(imageJocker.layer.frame) && !isBatmanJumped){
+            lowerHealth()
+            print("Collission with Joker")
+        }
+    }
+    
+    func lowerHealth(){
+        stopTimerRun()
+        imageBatman.loadGif(name: "batman_stand")
+        startTimerRun(timeTemp: 0.1)
     }
 }
