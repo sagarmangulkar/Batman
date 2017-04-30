@@ -65,12 +65,17 @@
                                 <rect key="frame" x="575" y="342" width="240" height="5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="joker_running.gif" id="gPM-2C-yM7">
+                                <rect key="frame" x="574" y="243" width="73" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="buttonJump" destination="ND1-Wj-Ntm" id="mue-uI-MfI"/>
                         <outlet property="imageBatman" destination="3MS-gd-Gkd" id="uf3-6o-fpD"/>
+                        <outlet property="imageJocker" destination="gPM-2C-yM7" id="GWk-P1-zak"/>
                         <outlet property="imageRunningPlatform" destination="gwr-yB-A13" id="wFg-xN-mEI"/>
                         <outlet property="imageWhiteStrip" destination="LuJ-So-IRU" id="29p-Ik-Y4O"/>
                     </connections>
@@ -84,6 +89,7 @@
         <image name="Road.jpg" width="300" height="250"/>
         <image name="background.jpg" width="1920" height="1080"/>
         <image name="batman_run.gif" width="600" height="450"/>
+        <image name="joker_running.gif" width="253" height="253"/>
         <image name="jump_button.png" width="231" height="231"/>
         <image name="start_button.png" width="315" height="149"/>
         <image name="white.jpg" width="512" height="512"/>

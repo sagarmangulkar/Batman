@@ -15,6 +15,7 @@ class PlayViewController: UIViewController {
     @IBOutlet var imageBackground: UIImageView!
     @IBOutlet var imageRunningPlatform: UIImageView!
     @IBOutlet var imageWhiteStrip: UIImageView!
+    @IBOutlet var imageJocker: UIImageView!
     
     var imageBatmanString = "batman_run"
     var batmanRunString = "batman_run"
@@ -24,9 +25,10 @@ class PlayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setHeroGif(tempImage: "batman_run")
+        imageJocker.loadGif(name: "joker_running")
         timerRun = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(run), userInfo: nil, repeats: false)
         
-        var timerPlatform = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(movePlatform), userInfo: nil, repeats: true)
+        var timerPlatform = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(movePlatform), userInfo: nil, repeats: true)
         
         imageWhiteStrip.frame.origin.x = 700
     }
@@ -64,7 +66,7 @@ class PlayViewController: UIViewController {
     }
 
     func movePlatform(){
-        UIView.animate(withDuration: 3, animations: {
+        UIView.animate(withDuration: 5, animations: {
             var frameTemp = self.imageWhiteStrip.frame
             frameTemp.origin.x = -500
             self.imageWhiteStrip.frame = frameTemp
@@ -76,6 +78,24 @@ class PlayViewController: UIViewController {
                     frameTemp.origin.x = 700
                     self.imageWhiteStrip.frame = frameTemp
                 })
+            //}
+        })
+        moveJoker()
+    }
+    
+    func moveJoker(){
+        UIView.animate(withDuration: 3, animations: {
+            var frameTemp = self.imageJocker.frame
+            frameTemp.origin.x = -100
+            self.imageJocker.frame = frameTemp
+        },completion:{
+            (finished: Bool) in
+            //  if(self.imageWhiteStrip.frame.origin.x < -200){
+            UIView.animate(withDuration: 0, animations: {
+                var frameTemp = self.imageJocker.frame
+                frameTemp.origin.x = 700
+                self.imageJocker.frame = frameTemp
+            })
             //}
         })
     }
@@ -90,13 +110,13 @@ class PlayViewController: UIViewController {
 
         UIView.animate(withDuration: 0.65, animations: {
             var frameTemp = self.imageBatman.frame
-            frameTemp.origin.y = frameTemp.origin.y - 70
+            frameTemp.origin.y = frameTemp.origin.y - 100
             self.imageBatman.frame = frameTemp
         },completion:{
             (finished: Bool) in
                 UIView.animate(withDuration: 0.65, animations: {
                     var frameTemp = self.imageBatman.frame
-                    frameTemp.origin.y = frameTemp.origin.y + 70
+                    frameTemp.origin.y = frameTemp.origin.y + 100
                     self.imageBatman.frame = frameTemp
                 })
         })

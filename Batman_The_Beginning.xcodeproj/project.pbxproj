@@ -29,6 +29,7 @@
 		525BCAF11EB4739F00358479 /* jump.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAF01EB4739F00358479 /* jump.gif */; };
 		525BCAF41EB5CBAB00358479 /* Road.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAF21EB5CBAB00358479 /* Road.jpg */; };
 		525BCAF51EB5CBAB00358479 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAF31EB5CBAB00358479 /* white.jpg */; };
+		525BCAF71EB5D19500358479 /* joker_running.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAF61EB5D19500358479 /* joker_running.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		525BCAF01EB4739F00358479 /* jump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = jump.gif; path = ../jump.gif; sourceTree = "<group>"; };
 		525BCAF21EB5CBAB00358479 /* Road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Road.jpg; sourceTree = SOURCE_ROOT; };
 		525BCAF31EB5CBAB00358479 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = SOURCE_ROOT; };
+		525BCAF61EB5D19500358479 /* joker_running.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = joker_running.gif; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 		525BCADB1EB2CBC000358479 /* Supporting_files */ = {
 			isa = PBXGroup;
 			children = (
+				525BCAF61EB5D19500358479 /* joker_running.gif */,
 				525BCAF21EB5CBAB00358479 /* Road.jpg */,
 				525BCAF31EB5CBAB00358479 /* white.jpg */,
 				525BCAF01EB4739F00358479 /* jump.gif */,
@@ -288,6 +291,7 @@
 				525BCAB01EB2C9E300358479 /* LaunchScreen.storyboard in Resources */,
 				525BCAE91EB32CAC00358479 /* jump_button.png in Resources */,
 				525BCAF41EB5CBAB00358479 /* Road.jpg in Resources */,
+				525BCAF71EB5D19500358479 /* joker_running.gif in Resources */,
 				525BCADF1EB2CFD400358479 /* batman_run.gif in Resources */,
 				525BCAE41EB3286700358479 /* batman_jump.gif in Resources */,
 				525BCAD81EB2CBB000358479 /* image_blackball.png in Resources */,
