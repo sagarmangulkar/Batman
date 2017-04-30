@@ -26,6 +26,7 @@
 		525BCAE71EB32A1100358479 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAE61EB32A1100358479 /* background.jpg */; };
 		525BCAE91EB32CAC00358479 /* jump_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAE81EB32CAC00358479 /* jump_button.png */; };
 		525BCAEB1EB401F600358479 /* wall_running_platform.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAEA1EB401F600358479 /* wall_running_platform.jpg */; };
+		525BCAF11EB4739F00358479 /* jump.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAF01EB4739F00358479 /* jump.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		525BCAE61EB32A1100358479 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = SOURCE_ROOT; };
 		525BCAE81EB32CAC00358479 /* jump_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jump_button.png; sourceTree = SOURCE_ROOT; };
 		525BCAEA1EB401F600358479 /* wall_running_platform.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall_running_platform.jpg; sourceTree = SOURCE_ROOT; };
+		525BCAF01EB4739F00358479 /* jump.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = jump.gif; path = ../jump.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,6 @@
 				525BCADC1EB2CE9A00358479 /* PlayViewController.swift */,
 				525BCAE01EB2D0C100358479 /* Swift+Gif.swift */,
 				525BCAA91EB2C9E300358479 /* Main.storyboard */,
-				525BCAEA1EB401F600358479 /* wall_running_platform.jpg */,
 				525BCAAC1EB2C9E300358479 /* Assets.xcassets */,
 				525BCAAE1EB2C9E300358479 /* LaunchScreen.storyboard */,
 				525BCAB11EB2C9E300358479 /* Info.plist */,
@@ -156,6 +157,8 @@
 		525BCADB1EB2CBC000358479 /* Supporting_files */ = {
 			isa = PBXGroup;
 			children = (
+				525BCAF01EB4739F00358479 /* jump.gif */,
+				525BCAEA1EB401F600358479 /* wall_running_platform.jpg */,
 				525BCAE81EB32CAC00358479 /* jump_button.png */,
 				525BCAE61EB32A1100358479 /* background.jpg */,
 				525BCAE31EB3286700358479 /* batman_stand.gif */,
@@ -282,6 +285,7 @@
 				525BCAE41EB3286700358479 /* batman_jump.gif in Resources */,
 				525BCAD81EB2CBB000358479 /* image_blackball.png in Resources */,
 				525BCAE51EB3286700358479 /* batman_stand.gif in Resources */,
+				525BCAF11EB4739F00358479 /* jump.gif in Resources */,
 				525BCAD91EB2CBB000358479 /* image_Play_Again_Button.png in Resources */,
 				525BCAAD1EB2C9E300358479 /* Assets.xcassets in Resources */,
 				525BCAAB1EB2C9E300358479 /* Main.storyboard in Resources */,

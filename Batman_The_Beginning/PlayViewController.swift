@@ -15,10 +15,15 @@ class PlayViewController: UIViewController {
     @IBOutlet var imageBackground: UIImageView!
     @IBOutlet var imageRunningPlatform: UIImageView!
     
+    var imageBatmanString = "batman_run"
+    var batmanRunString = "batman_run"
+    var batmanJumpString = "jump.gif"
+    private var timerRun: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageBatman.loadGif(name: "batman_run")
-        // Do any additional setup after loading the view.
+        setHeroGif(tempImage: "batman_run")
+        timerRun = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(run), userInfo: nil, repeats: false)
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,10 +32,53 @@ class PlayViewController: UIViewController {
     }
     
     @IBAction func pushButtonJump(_ sender: Any) {
-        imageBatman.loadGif(name: "batman_jump")
-        //sleep(1)
-    //    imageBatman.image = UIImage(named:"start_button.png")
-     //   imageBatman.loadGif(name: "batman_run")
+        print("Jump...!")
+        jump()
+    }
+    
+    func startTimerRun() {
+        guard timerRun == nil else { return }
+        timerRun = Timer.scheduledTimer(timeInterval: 1.3, target: self, selector: #selector(run), userInfo: nil, repeats: false)
+
+    }
+    
+    func stopTimerRun() {
+        guard timerRun != nil else { return }
+        timerRun?.invalidate()
+        timerRun = nil
     }
 
+    func setHeroGif(tempImage: String) -> Void{
+        imageBatman.loadGif(name: tempImage)
+        imageBatmanString = tempImage
+    }
+    
+    func setHeroImage(tempImage: String) -> Void{
+        imageBatman.image = UIImage(named:tempImage)
+        imageBatmanString = tempImage
+    }
+
+    func run(){
+        setHeroGif(tempImage: "batman_run")
+    }
+    
+    func jump(){
+        stopTimerRun()
+        setHeroGif(tempImage: "batman_jump")
+
+        UIView.animate(withDuration: 0.65, animations: {
+            var frameTemp = self.imageBatman.frame
+            frameTemp.origin.y = frameTemp.origin.y - 70
+            self.imageBatman.frame = frameTemp
+        },completion:{
+            (finished: Bool) in
+                UIView.animate(withDuration: 0.65, animations: {
+                    var frameTemp = self.imageBatman.frame
+                    frameTemp.origin.y = frameTemp.origin.y + 70
+                    self.imageBatman.frame = frameTemp
+                })
+        })
+        
+        startTimerRun()
+    }
 }
