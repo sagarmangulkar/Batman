@@ -46,6 +46,9 @@
 		525BCB161EB6EF1400358479 /* healthbar_75.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB121EB6EF1400358479 /* healthbar_75.png */; };
 		525BCB171EB6EF1400358479 /* healthbar_100.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB131EB6EF1400358479 /* healthbar_100.png */; };
 		525BCB191EB6FBB600358479 /* joker_kills_Batman.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB181EB6FBB600358479 /* joker_kills_Batman.gif */; };
+		525BCB1B1EB720A800358479 /* batman_weapon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB1A1EB720A800358479 /* batman_weapon1.png */; };
+		525BCB1E1EB7262000358479 /* button_exit.ico in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB1C1EB7262000358479 /* button_exit.ico */; };
+		525BCB211EB7267100358479 /* button_jump1.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB201EB7267100358479 /* button_jump1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,9 @@
 		525BCB121EB6EF1400358479 /* healthbar_75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = healthbar_75.png; sourceTree = SOURCE_ROOT; };
 		525BCB131EB6EF1400358479 /* healthbar_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = healthbar_100.png; sourceTree = SOURCE_ROOT; };
 		525BCB181EB6FBB600358479 /* joker_kills_Batman.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = joker_kills_Batman.gif; sourceTree = SOURCE_ROOT; };
+		525BCB1A1EB720A800358479 /* batman_weapon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman_weapon1.png; sourceTree = SOURCE_ROOT; };
+		525BCB1C1EB7262000358479 /* button_exit.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = button_exit.ico; sourceTree = SOURCE_ROOT; };
+		525BCB201EB7267100358479 /* button_jump1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_jump1.png; path = ../button_jump1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 				525BCADC1EB2CE9A00358479 /* PlayViewController.swift */,
 				525BCAE01EB2D0C100358479 /* Swift+Gif.swift */,
 				525BCAA91EB2C9E300358479 /* Main.storyboard */,
+				525BCB1A1EB720A800358479 /* batman_weapon1.png */,
 				525BCAAC1EB2C9E300358479 /* Assets.xcassets */,
 				525BCAAE1EB2C9E300358479 /* LaunchScreen.storyboard */,
 				525BCAB11EB2C9E300358479 /* Info.plist */,
@@ -195,6 +202,8 @@
 		525BCADB1EB2CBC000358479 /* Supporting_files */ = {
 			isa = PBXGroup;
 			children = (
+				525BCB201EB7267100358479 /* button_jump1.png */,
+				525BCB1C1EB7262000358479 /* button_exit.ico */,
 				525BCB101EB6EF1400358479 /* healthbar_25.png */,
 				525BCB111EB6EF1400358479 /* healthbar_50.png */,
 				525BCB121EB6EF1400358479 /* healthbar_75.png */,
@@ -350,6 +359,8 @@
 				525BCAE51EB3286700358479 /* batman_stand.gif in Resources */,
 				525BCAF11EB4739F00358479 /* jump.gif in Resources */,
 				525BCAD91EB2CBB000358479 /* image_Play_Again_Button.png in Resources */,
+				525BCB1E1EB7262000358479 /* button_exit.ico in Resources */,
+				525BCB211EB7267100358479 /* button_jump1.png in Resources */,
 				525BCAF51EB5CBAB00358479 /* white.jpg in Resources */,
 				525BCB0C1EB6E93B00358479 /* blood1.png in Resources */,
 				525BCB191EB6FBB600358479 /* joker_kills_Batman.gif in Resources */,
@@ -368,6 +379,7 @@
 				525BCAE71EB32A1100358479 /* background.jpg in Resources */,
 				525BCB141EB6EF1400358479 /* healthbar_25.png in Resources */,
 				525BCAD71EB2CBB000358479 /* game-over.png in Resources */,
+				525BCB1B1EB720A800358479 /* batman_weapon1.png in Resources */,
 				525BCB171EB6EF1400358479 /* healthbar_100.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

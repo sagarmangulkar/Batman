@@ -21,6 +21,8 @@ class PlayViewController: UIViewController {
     @IBOutlet var imageGameOver: UIImageView!
     @IBOutlet var imageEndingScene: UIImageView!
     @IBOutlet var buttonPlayAgain: UIButton!
+    @IBOutlet var imageWeaponBatman: UIImageView!
+    @IBOutlet var buttonAttack: UIButton!
     
     var imageBatmanString = "batman_run"
     var batmanRunString = "batman_run"
@@ -51,11 +53,16 @@ class PlayViewController: UIViewController {
         imageBackground.loadGif(name: "moving_background2")
         imageBlood.isHidden = true
         buttonPlayAgain.isHidden = true
+        imageWeaponBatman.isHidden = true
     }
     
     @IBAction func pushButtonJump(_ sender: Any) {
         print("Jump...!")
         jump()
+    }
+    
+    @IBAction func pushButtonAttack(_ sender: Any) {
+    
     }
     
     func initializeTimers(){
@@ -136,34 +143,36 @@ class PlayViewController: UIViewController {
     }
     
     func jump(){
-        stopTimerRun()
-        setHeroGif(tempImage: "batman_jump")
-        self.isBatmanJumped = false
-        UIView.animate(withDuration: 1, animations: {
-            var frameTemp = self.imageBatman.frame
-            frameTemp.origin.y = frameTemp.origin.y - 200
-            self.imageBatman.frame = frameTemp
-        },completion:{
-            (finished: Bool) in
-            self.isBatmanJumped = true
-            UIView.animate(withDuration: 1, animations: {
+        if(imageBlood.isHidden){
+            stopTimerRun()
+            setHeroGif(tempImage: "batman_jump")
+            self.isBatmanJumped = false
+            UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: [.curveEaseOut], animations: {
                 var frameTemp = self.imageBatman.frame
-                frameTemp.origin.y = frameTemp.origin.y + 200
+                frameTemp.origin.y = frameTemp.origin.y - 185
                 self.imageBatman.frame = frameTemp
+            },completion:{
+                (finished: Bool) in
+                self.isBatmanJumped = true
+                UIView.animate(withDuration: 1, animations: {
+                    var frameTemp = self.imageBatman.frame
+                    frameTemp.origin.y = frameTemp.origin.y + 185
+                    self.imageBatman.frame = frameTemp
+                })
             })
-        })
-        startTimerRun(timeTemp: 2)
+            startTimerRun(timeTemp: 2)
+        }
     }
     
     func checkCollisionWithJoker(){
         if(imageBatman.layer.frame.intersects(imageJocker.layer.frame) && !isBatmanJumped){
             lowerHealth()
-            print("Collission with Joker")
         }
     }
     
     func lowerHealth(){
         if(!isAttacked){
+            print("Joker Attacked Batman...!")
             healthBatman -= 25
             if(healthBatman == 100){
                 imageHealthBarBatman.image = UIImage(named: "healthbar_100.png")
@@ -201,3 +210,5 @@ class PlayViewController: UIViewController {
         buttonPlayAgain.isHidden = false
     }
 }
+
+
