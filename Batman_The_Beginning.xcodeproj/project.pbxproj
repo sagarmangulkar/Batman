@@ -30,6 +30,22 @@
 		525BCAF41EB5CBAB00358479 /* Road.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAF21EB5CBAB00358479 /* Road.jpg */; };
 		525BCAF51EB5CBAB00358479 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAF31EB5CBAB00358479 /* white.jpg */; };
 		525BCAF71EB5D19500358479 /* joker_running.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAF61EB5D19500358479 /* joker_running.gif */; };
+		525BCAF91EB6AECB00358479 /* street_lamp.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAF81EB6AECB00358479 /* street_lamp.png */; };
+		525BCAFD1EB6B59C00358479 /* background1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAFA1EB6B59C00358479 /* background1.jpg */; };
+		525BCAFE1EB6B59C00358479 /* background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAFB1EB6B59C00358479 /* background2.jpg */; };
+		525BCAFF1EB6B59C00358479 /* background3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCAFC1EB6B59C00358479 /* background3.jpg */; };
+		525BCB011EB6BD2300358479 /* background4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB001EB6BD2300358479 /* background4.jpg */; };
+		525BCB041EB6C2A500358479 /* moving_background1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB021EB6C2A500358479 /* moving_background1.gif */; };
+		525BCB051EB6C2A500358479 /* moving_background2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB031EB6C2A500358479 /* moving_background2.gif */; };
+		525BCB071EB6DE3E00358479 /* background_running_platform.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB061EB6DE3E00358479 /* background_running_platform.jpg */; };
+		525BCB0B1EB6E93B00358479 /* blood.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB081EB6E93B00358479 /* blood.png */; };
+		525BCB0C1EB6E93B00358479 /* blood1.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB091EB6E93B00358479 /* blood1.png */; };
+		525BCB0D1EB6E93B00358479 /* blood2.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB0A1EB6E93B00358479 /* blood2.png */; };
+		525BCB141EB6EF1400358479 /* healthbar_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB101EB6EF1400358479 /* healthbar_25.png */; };
+		525BCB151EB6EF1400358479 /* healthbar_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB111EB6EF1400358479 /* healthbar_50.png */; };
+		525BCB161EB6EF1400358479 /* healthbar_75.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB121EB6EF1400358479 /* healthbar_75.png */; };
+		525BCB171EB6EF1400358479 /* healthbar_100.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB131EB6EF1400358479 /* healthbar_100.png */; };
+		525BCB191EB6FBB600358479 /* joker_kills_Batman.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB181EB6FBB600358479 /* joker_kills_Batman.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +95,22 @@
 		525BCAF21EB5CBAB00358479 /* Road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Road.jpg; sourceTree = SOURCE_ROOT; };
 		525BCAF31EB5CBAB00358479 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = SOURCE_ROOT; };
 		525BCAF61EB5D19500358479 /* joker_running.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = joker_running.gif; sourceTree = SOURCE_ROOT; };
+		525BCAF81EB6AECB00358479 /* street_lamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = street_lamp.png; sourceTree = SOURCE_ROOT; };
+		525BCAFA1EB6B59C00358479 /* background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background1.jpg; sourceTree = SOURCE_ROOT; };
+		525BCAFB1EB6B59C00358479 /* background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpg; sourceTree = SOURCE_ROOT; };
+		525BCAFC1EB6B59C00358479 /* background3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background3.jpg; sourceTree = SOURCE_ROOT; };
+		525BCB001EB6BD2300358479 /* background4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background4.jpg; sourceTree = SOURCE_ROOT; };
+		525BCB021EB6C2A500358479 /* moving_background1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = moving_background1.gif; path = ../moving_background1.gif; sourceTree = "<group>"; };
+		525BCB031EB6C2A500358479 /* moving_background2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = moving_background2.gif; path = ../moving_background2.gif; sourceTree = "<group>"; };
+		525BCB061EB6DE3E00358479 /* background_running_platform.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_running_platform.jpg; sourceTree = SOURCE_ROOT; };
+		525BCB081EB6E93B00358479 /* blood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blood.png; sourceTree = SOURCE_ROOT; };
+		525BCB091EB6E93B00358479 /* blood1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blood1.png; sourceTree = SOURCE_ROOT; };
+		525BCB0A1EB6E93B00358479 /* blood2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blood2.png; sourceTree = SOURCE_ROOT; };
+		525BCB101EB6EF1400358479 /* healthbar_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = healthbar_25.png; sourceTree = SOURCE_ROOT; };
+		525BCB111EB6EF1400358479 /* healthbar_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = healthbar_50.png; sourceTree = SOURCE_ROOT; };
+		525BCB121EB6EF1400358479 /* healthbar_75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = healthbar_75.png; sourceTree = SOURCE_ROOT; };
+		525BCB131EB6EF1400358479 /* healthbar_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = healthbar_100.png; sourceTree = SOURCE_ROOT; };
+		525BCB181EB6FBB600358479 /* joker_kills_Batman.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = joker_kills_Batman.gif; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +195,22 @@
 		525BCADB1EB2CBC000358479 /* Supporting_files */ = {
 			isa = PBXGroup;
 			children = (
+				525BCB101EB6EF1400358479 /* healthbar_25.png */,
+				525BCB111EB6EF1400358479 /* healthbar_50.png */,
+				525BCB121EB6EF1400358479 /* healthbar_75.png */,
+				525BCB131EB6EF1400358479 /* healthbar_100.png */,
+				525BCB181EB6FBB600358479 /* joker_kills_Batman.gif */,
+				525BCB081EB6E93B00358479 /* blood.png */,
+				525BCB091EB6E93B00358479 /* blood1.png */,
+				525BCB0A1EB6E93B00358479 /* blood2.png */,
+				525BCB061EB6DE3E00358479 /* background_running_platform.jpg */,
+				525BCB021EB6C2A500358479 /* moving_background1.gif */,
+				525BCB031EB6C2A500358479 /* moving_background2.gif */,
+				525BCB001EB6BD2300358479 /* background4.jpg */,
+				525BCAFA1EB6B59C00358479 /* background1.jpg */,
+				525BCAFB1EB6B59C00358479 /* background2.jpg */,
+				525BCAFC1EB6B59C00358479 /* background3.jpg */,
+				525BCAF81EB6AECB00358479 /* street_lamp.png */,
 				525BCAF61EB5D19500358479 /* joker_running.gif */,
 				525BCAF21EB5CBAB00358479 /* Road.jpg */,
 				525BCAF31EB5CBAB00358479 /* white.jpg */,
@@ -291,20 +339,36 @@
 				525BCAB01EB2C9E300358479 /* LaunchScreen.storyboard in Resources */,
 				525BCAE91EB32CAC00358479 /* jump_button.png in Resources */,
 				525BCAF41EB5CBAB00358479 /* Road.jpg in Resources */,
+				525BCB051EB6C2A500358479 /* moving_background2.gif in Resources */,
 				525BCAF71EB5D19500358479 /* joker_running.gif in Resources */,
+				525BCAFD1EB6B59C00358479 /* background1.jpg in Resources */,
 				525BCADF1EB2CFD400358479 /* batman_run.gif in Resources */,
+				525BCB0D1EB6E93B00358479 /* blood2.png in Resources */,
 				525BCAE41EB3286700358479 /* batman_jump.gif in Resources */,
+				525BCB151EB6EF1400358479 /* healthbar_50.png in Resources */,
 				525BCAD81EB2CBB000358479 /* image_blackball.png in Resources */,
 				525BCAE51EB3286700358479 /* batman_stand.gif in Resources */,
 				525BCAF11EB4739F00358479 /* jump.gif in Resources */,
 				525BCAD91EB2CBB000358479 /* image_Play_Again_Button.png in Resources */,
 				525BCAF51EB5CBAB00358479 /* white.jpg in Resources */,
+				525BCB0C1EB6E93B00358479 /* blood1.png in Resources */,
+				525BCB191EB6FBB600358479 /* joker_kills_Batman.gif in Resources */,
+				525BCB011EB6BD2300358479 /* background4.jpg in Resources */,
+				525BCB0B1EB6E93B00358479 /* blood.png in Resources */,
+				525BCAFE1EB6B59C00358479 /* background2.jpg in Resources */,
+				525BCB041EB6C2A500358479 /* moving_background1.gif in Resources */,
+				525BCAFF1EB6B59C00358479 /* background3.jpg in Resources */,
 				525BCAAD1EB2C9E300358479 /* Assets.xcassets in Resources */,
+				525BCAF91EB6AECB00358479 /* street_lamp.png in Resources */,
 				525BCAAB1EB2C9E300358479 /* Main.storyboard in Resources */,
+				525BCB161EB6EF1400358479 /* healthbar_75.png in Resources */,
 				525BCADA1EB2CBB000358479 /* start_button.png in Resources */,
+				525BCB071EB6DE3E00358479 /* background_running_platform.jpg in Resources */,
 				525BCAEB1EB401F600358479 /* wall_running_platform.jpg in Resources */,
 				525BCAE71EB32A1100358479 /* background.jpg in Resources */,
+				525BCB141EB6EF1400358479 /* healthbar_25.png in Resources */,
 				525BCAD71EB2CBB000358479 /* game-over.png in Resources */,
+				525BCB171EB6EF1400358479 /* healthbar_100.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
