@@ -29,6 +29,7 @@ class PlayViewController: UIViewController {
     var batmanJumpString = "jump.gif"
     private var timerRun: Timer?
     private var timerGameOver: Timer?
+    private var timerAttack: Timer?
     var isBatmanJumped = false
     var isBatmanHidden = false
     var healthBatman = 100
@@ -54,6 +55,7 @@ class PlayViewController: UIViewController {
         imageBlood.isHidden = true
         buttonPlayAgain.isHidden = true
         imageWeaponBatman.isHidden = true
+        buttonAttack.isHidden = false
     }
     
     @IBAction func pushButtonJump(_ sender: Any) {
@@ -62,7 +64,9 @@ class PlayViewController: UIViewController {
     }
     
     @IBAction func pushButtonAttack(_ sender: Any) {
-    
+        print("Batman attacked Joker...!")
+        startTimerAttack(timeTemp: 0.1)
+        imageWeaponBatman.isHidden = false
     }
     
     func initializeTimers(){
@@ -71,6 +75,8 @@ class PlayViewController: UIViewController {
         var timerPlatform = Timer.scheduledTimer(timeInterval: 9, target: self, selector: #selector(movePlatform), userInfo: nil, repeats: true)
         
         var timerCheckCollisionWithJoker = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(checkCollisionWithJoker), userInfo: nil, repeats: true)
+       
+        var timerCheckCollisionForAttackOnJoker = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(checkCollisionForAttackOnJoker), userInfo: nil, repeats: true)
         
         var timerMoveJoker = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(moveJoker), userInfo: nil, repeats: true)
     }
@@ -90,6 +96,20 @@ class PlayViewController: UIViewController {
         guard timerGameOver == nil else { return }
         timerGameOver = Timer.scheduledTimer(timeInterval: timeTemp, target: self, selector: #selector(gameOver), userInfo: nil, repeats: false)
     }
+    
+    func startTimerAttack(timeTemp: Double)-> Void {
+        guard timerAttack == nil else { return }
+        timerAttack = Timer.scheduledTimer(timeInterval: timeTemp, target: self, selector: #selector(attack), userInfo: nil, repeats: true)
+        //imageWeaponBatman.isHidden = false
+    }
+    
+    func stopTimerAttack() {
+        guard timerAttack != nil else { return }
+        timerAttack?.invalidate()
+        timerAttack = nil
+        imageWeaponBatman.isHidden = true
+    }
+
     
     func setHeroGif(tempImage: String) -> Void{
         imageBatman.loadGif(name: tempImage)
@@ -131,6 +151,7 @@ class PlayViewController: UIViewController {
                     frameTemp.origin.x = 1300
                     self.imageJocker.frame = frameTemp
                     self.isAttacked = false
+                    self.imageJocker.isHidden = false
                 })
             }
         })
@@ -164,9 +185,38 @@ class PlayViewController: UIViewController {
         }
     }
     
+    func attack(){
+        UIView.animate(withDuration: 0.1, animations: {
+            var frameTemp = self.imageWeaponBatman.frame
+            frameTemp.origin.x = frameTemp.origin.x + 20
+            self.imageWeaponBatman.frame = frameTemp
+        },completion:{
+            (finished: Bool) in
+            if(self.imageWeaponBatman.frame.origin.x > 700){
+                UIView.animate(withDuration: 0, animations: {
+                    var frameTemp = self.imageWeaponBatman.frame
+                    frameTemp.origin.x = 130
+                    self.imageWeaponBatman.frame = frameTemp
+                    self.stopTimerAttack()
+                })
+            }
+        })
+    }
+    
     func checkCollisionWithJoker(){
         if(imageBatman.layer.frame.intersects(imageJocker.layer.frame) && !isBatmanJumped){
-            lowerHealth()
+            if(!imageJocker.isHidden){
+                lowerHealth()
+            }
+        }
+    }
+    
+    func checkCollisionForAttackOnJoker(){
+        if(imageWeaponBatman.layer.frame.intersects(imageJocker.layer.frame) && !imageWeaponBatman.isHidden){
+            //killJoker()
+            print("Joker Killed...!")
+            imageJocker.isHidden = true
+            imageWeaponBatman.isHidden = true
         }
     }
     
@@ -208,6 +258,7 @@ class PlayViewController: UIViewController {
         imageJocker.isHidden = true
         buttonJump.isHidden = true
         buttonPlayAgain.isHidden = false
+        buttonAttack.isHidden = true
     }
 }
 
