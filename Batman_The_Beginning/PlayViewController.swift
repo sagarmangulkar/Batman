@@ -25,6 +25,7 @@ class PlayViewController: UIViewController {
     @IBOutlet var imageWeaponBatman: UIImageView!
     @IBOutlet var buttonAttack: UIButton!
     @IBOutlet var imagePowerWeapon: UIImageView!
+    @IBOutlet var imageBlastJoker: UIImageView!
     
     var imageBatmanString = "batman_run"
     var batmanRunString = "batman_run"
@@ -34,6 +35,7 @@ class PlayViewController: UIViewController {
     private var timerAttack: Timer?
     private var timerMoveJoker: Timer?
     private var timerMovePowerWeapon: Timer?
+    private var timerHideBlastJoker: Timer?
     var isBatmanJumped = false
     var isBatmanHidden = false
     var healthBatman = 100
@@ -65,6 +67,7 @@ class PlayViewController: UIViewController {
         buttonAttack.isHidden = false
         imagePowerWeapon.frame.origin.x = 1500
         imagePowerWeapon.isHidden = false
+        imageBlastJoker.isHidden = true
     }
     
     @IBAction func pushButtonExit(_ sender: Any) {
@@ -103,6 +106,8 @@ class PlayViewController: UIViewController {
     
     func initializeTimers(){
         timerRun = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(run), userInfo: nil, repeats: false)
+        
+   //     timerHideBlastJoker = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(hideBlastJoker), userInfo: nil, repeats: false)
         
         var timerPlatform = Timer.scheduledTimer(timeInterval: 9, target: self, selector: #selector(movePlatform), userInfo: nil, repeats: true)
         
@@ -157,6 +162,19 @@ class PlayViewController: UIViewController {
         timerMovePowerWeapon?.invalidate()
         timerMovePowerWeapon = nil
         imagePowerWeapon.isHidden = true
+    }
+    
+    func startTimerHideBlastJoker(timeTemp: Double)-> Void {
+        print("Inside Timer...1")
+       // guard timerHideBlastJoker == nil else { return }
+        timerHideBlastJoker = Timer.scheduledTimer(timeInterval: timeTemp, target: self, selector: #selector(hideBlastJoker), userInfo: nil, repeats: false)
+    }
+    
+    func stopTimerHideBlastJoker() {
+        guard timerHideBlastJoker != nil else { return }
+        timerHideBlastJoker?.invalidate()
+        timerHideBlastJoker = nil
+        imageBlastJoker.isHidden = true
     }
     
     func setHeroGif(tempImage: String) -> Void{
@@ -269,6 +287,12 @@ class PlayViewController: UIViewController {
         })
     }
     
+    func hideBlastJoker(){
+        print("Hiding....!")
+        imageBlastJoker.isHidden = true
+        imageBlastJoker.image = UIImage(named: "blood.png")
+    }
+    
     func checkCollisionWithJoker(){
         if(imageBatman.layer.frame.intersects(imageJocker.layer.frame) && !isBatmanJumped){
             if(!imageJocker.isHidden){
@@ -281,6 +305,10 @@ class PlayViewController: UIViewController {
         if(imageWeaponBatman.layer.frame.intersects(imageJocker.layer.frame) && !imageWeaponBatman.isHidden){
             //killJoker()
             print("Joker Killed...!")
+            imageBlastJoker.frame.origin.x = imageJocker.frame.origin.x
+            imageBlastJoker.isHidden = false
+            imageBlastJoker.loadGif(name: "blast")
+            startTimerHideBlastJoker(timeTemp: 1.2)
             imageJocker.isHidden = true
             imageWeaponBatman.isHidden = true
         }
@@ -288,7 +316,7 @@ class PlayViewController: UIViewController {
     }
     
     func checkCollisionToGetPowerWeapon(){
-        print("Trying to get Power Weapon...!")
+        //print("Trying to get Power Weapon...!")
         if(imageBatman.layer.frame.intersects(imagePowerWeapon.layer.frame)){
             if(!imagePowerWeapon.isHidden){
                 powerWeaponUp()

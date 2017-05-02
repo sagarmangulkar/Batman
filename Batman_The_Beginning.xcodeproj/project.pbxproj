@@ -54,6 +54,7 @@
 		525BCB291EB81C7000358479 /* Joker_Laugh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB281EB81C7000358479 /* Joker_Laugh.mp3 */; };
 		525BCB2C1EB81E8D00358479 /* panel_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB2A1EB81E8D00358479 /* panel_background.jpg */; };
 		525BCB2D1EB81E8D00358479 /* panel_background1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB2B1EB81E8D00358479 /* panel_background1.jpg */; };
+		525BCB2F1EB8315E00358479 /* blast.gif in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB2E1EB8315E00358479 /* blast.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		525BCB281EB81C7000358479 /* Joker_Laugh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Joker_Laugh.mp3; path = ../Joker_Laugh.mp3; sourceTree = "<group>"; };
 		525BCB2A1EB81E8D00358479 /* panel_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panel_background.jpg; sourceTree = SOURCE_ROOT; };
 		525BCB2B1EB81E8D00358479 /* panel_background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panel_background1.jpg; sourceTree = SOURCE_ROOT; };
+		525BCB2E1EB8315E00358479 /* blast.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = blast.gif; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 		525BCADB1EB2CBC000358479 /* Supporting_files */ = {
 			isa = PBXGroup;
 			children = (
+				525BCB2E1EB8315E00358479 /* blast.gif */,
 				525BCB2A1EB81E8D00358479 /* panel_background.jpg */,
 				525BCB2B1EB81E8D00358479 /* panel_background1.jpg */,
 				525BCB281EB81C7000358479 /* Joker_Laugh.mp3 */,
@@ -401,6 +404,7 @@
 				525BCAD71EB2CBB000358479 /* game-over.png in Resources */,
 				525BCB1B1EB720A800358479 /* batman_weapon1.png in Resources */,
 				525BCB171EB6EF1400358479 /* healthbar_100.png in Resources */,
+				525BCB2F1EB8315E00358479 /* blast.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

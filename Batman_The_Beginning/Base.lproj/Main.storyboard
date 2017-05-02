@@ -85,7 +85,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="842D3235-FCCD-4EF3-A532-F9615CD5ABF5" id="LuJ-So-IRU">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="E0E2B494-A06F-49F4-B690-5A4AE0C790BE" id="LuJ-So-IRU">
                                         <rect key="frame" x="315" y="114" width="37" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -140,6 +140,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="Awy-OK-4D1">
+                                <rect key="frame" x="458" y="198" width="95" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -149,6 +153,7 @@
                         <outlet property="buttonPlayAgain" destination="fWS-EK-Qan" id="dep-JT-OAA"/>
                         <outlet property="imageBackground" destination="zmX-bg-DtN" id="Oc7-Ic-5Aj"/>
                         <outlet property="imageBatman" destination="3MS-gd-Gkd" id="uf3-6o-fpD"/>
+                        <outlet property="imageBlastJoker" destination="Awy-OK-4D1" id="txk-Fk-h4h"/>
                         <outlet property="imageBlood" destination="Ldn-Gc-Fub" id="GyL-ZF-Gtr"/>
                         <outlet property="imageEndingScene" destination="OrZ-5o-rhj" id="vQZ-VS-WBx"/>
                         <outlet property="imageGameOver" destination="tXH-MR-RAs" id="2J6-rh-dZE"/>
@@ -166,7 +171,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="842D3235-FCCD-4EF3-A532-F9615CD5ABF5" width="272" height="868">
+        <image name="E0E2B494-A06F-49F4-B690-5A4AE0C790BE" width="272" height="868">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
