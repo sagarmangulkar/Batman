@@ -49,6 +49,11 @@
 		525BCB1B1EB720A800358479 /* batman_weapon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB1A1EB720A800358479 /* batman_weapon1.png */; };
 		525BCB1E1EB7262000358479 /* button_exit.ico in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB1C1EB7262000358479 /* button_exit.ico */; };
 		525BCB211EB7267100358479 /* button_jump1.png in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB201EB7267100358479 /* button_jump1.png */; };
+		525BCB231EB8115D00358479 /* starting_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB221EB8115D00358479 /* starting_background.jpg */; };
+		525BCB251EB818AB00358479 /* Batman_Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB241EB818AB00358479 /* Batman_Theme.mp3 */; };
+		525BCB291EB81C7000358479 /* Joker_Laugh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB281EB81C7000358479 /* Joker_Laugh.mp3 */; };
+		525BCB2C1EB81E8D00358479 /* panel_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB2A1EB81E8D00358479 /* panel_background.jpg */; };
+		525BCB2D1EB81E8D00358479 /* panel_background1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 525BCB2B1EB81E8D00358479 /* panel_background1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +122,11 @@
 		525BCB1A1EB720A800358479 /* batman_weapon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman_weapon1.png; sourceTree = SOURCE_ROOT; };
 		525BCB1C1EB7262000358479 /* button_exit.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = button_exit.ico; sourceTree = SOURCE_ROOT; };
 		525BCB201EB7267100358479 /* button_jump1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_jump1.png; path = ../button_jump1.png; sourceTree = "<group>"; };
+		525BCB221EB8115D00358479 /* starting_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = starting_background.jpg; sourceTree = SOURCE_ROOT; };
+		525BCB241EB818AB00358479 /* Batman_Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Batman_Theme.mp3; sourceTree = SOURCE_ROOT; };
+		525BCB281EB81C7000358479 /* Joker_Laugh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Joker_Laugh.mp3; path = ../Joker_Laugh.mp3; sourceTree = "<group>"; };
+		525BCB2A1EB81E8D00358479 /* panel_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panel_background.jpg; sourceTree = SOURCE_ROOT; };
+		525BCB2B1EB81E8D00358479 /* panel_background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panel_background1.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +182,6 @@
 				525BCADC1EB2CE9A00358479 /* PlayViewController.swift */,
 				525BCAE01EB2D0C100358479 /* Swift+Gif.swift */,
 				525BCAA91EB2C9E300358479 /* Main.storyboard */,
-				525BCB1A1EB720A800358479 /* batman_weapon1.png */,
 				525BCAAC1EB2C9E300358479 /* Assets.xcassets */,
 				525BCAAE1EB2C9E300358479 /* LaunchScreen.storyboard */,
 				525BCAB11EB2C9E300358479 /* Info.plist */,
@@ -202,6 +211,12 @@
 		525BCADB1EB2CBC000358479 /* Supporting_files */ = {
 			isa = PBXGroup;
 			children = (
+				525BCB2A1EB81E8D00358479 /* panel_background.jpg */,
+				525BCB2B1EB81E8D00358479 /* panel_background1.jpg */,
+				525BCB281EB81C7000358479 /* Joker_Laugh.mp3 */,
+				525BCB221EB8115D00358479 /* starting_background.jpg */,
+				525BCB1A1EB720A800358479 /* batman_weapon1.png */,
+				525BCB241EB818AB00358479 /* Batman_Theme.mp3 */,
 				525BCB201EB7267100358479 /* button_jump1.png */,
 				525BCB1C1EB7262000358479 /* button_exit.ico */,
 				525BCB101EB6EF1400358479 /* healthbar_25.png */,
@@ -345,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525BCB2D1EB81E8D00358479 /* panel_background1.jpg in Resources */,
 				525BCAB01EB2C9E300358479 /* LaunchScreen.storyboard in Resources */,
 				525BCAE91EB32CAC00358479 /* jump_button.png in Resources */,
 				525BCAF41EB5CBAB00358479 /* Road.jpg in Resources */,
@@ -355,6 +371,7 @@
 				525BCB0D1EB6E93B00358479 /* blood2.png in Resources */,
 				525BCAE41EB3286700358479 /* batman_jump.gif in Resources */,
 				525BCB151EB6EF1400358479 /* healthbar_50.png in Resources */,
+				525BCB2C1EB81E8D00358479 /* panel_background.jpg in Resources */,
 				525BCAD81EB2CBB000358479 /* image_blackball.png in Resources */,
 				525BCAE51EB3286700358479 /* batman_stand.gif in Resources */,
 				525BCAF11EB4739F00358479 /* jump.gif in Resources */,
@@ -364,16 +381,19 @@
 				525BCAF51EB5CBAB00358479 /* white.jpg in Resources */,
 				525BCB0C1EB6E93B00358479 /* blood1.png in Resources */,
 				525BCB191EB6FBB600358479 /* joker_kills_Batman.gif in Resources */,
+				525BCB291EB81C7000358479 /* Joker_Laugh.mp3 in Resources */,
 				525BCB011EB6BD2300358479 /* background4.jpg in Resources */,
 				525BCB0B1EB6E93B00358479 /* blood.png in Resources */,
 				525BCAFE1EB6B59C00358479 /* background2.jpg in Resources */,
 				525BCB041EB6C2A500358479 /* moving_background1.gif in Resources */,
+				525BCB251EB818AB00358479 /* Batman_Theme.mp3 in Resources */,
 				525BCAFF1EB6B59C00358479 /* background3.jpg in Resources */,
 				525BCAAD1EB2C9E300358479 /* Assets.xcassets in Resources */,
 				525BCAF91EB6AECB00358479 /* street_lamp.png in Resources */,
 				525BCAAB1EB2C9E300358479 /* Main.storyboard in Resources */,
 				525BCB161EB6EF1400358479 /* healthbar_75.png in Resources */,
 				525BCADA1EB2CBB000358479 /* start_button.png in Resources */,
+				525BCB231EB8115D00358479 /* starting_background.jpg in Resources */,
 				525BCB071EB6DE3E00358479 /* background_running_platform.jpg in Resources */,
 				525BCAEB1EB401F600358479 /* wall_running_platform.jpg in Resources */,
 				525BCAE71EB32A1100358479 /* background.jpg in Resources */,

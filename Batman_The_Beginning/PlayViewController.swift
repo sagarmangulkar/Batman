@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlayViewController: UIViewController {
     
@@ -30,13 +31,16 @@ class PlayViewController: UIViewController {
     private var timerRun: Timer?
     private var timerGameOver: Timer?
     private var timerAttack: Timer?
+    private var timerMoveJoker: Timer?
     var isBatmanJumped = false
     var isBatmanHidden = false
     var healthBatman = 100
     var isAttacked = false
+    var isGameOver = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        playSound(tempSoundFileName: "Batman_Theme")
         initializeTimers()
         startingState()
     }
@@ -46,6 +50,7 @@ class PlayViewController: UIViewController {
     }
     
     func startingState(){
+        isGameOver = false
         imageGameOver.isHidden = true
         setHeroGif(tempImage: "batman_run")
         imageJocker.loadGif(name: "joker_running")
@@ -56,6 +61,11 @@ class PlayViewController: UIViewController {
         buttonPlayAgain.isHidden = true
         imageWeaponBatman.isHidden = true
         buttonAttack.isHidden = false
+    }
+    
+    @IBAction func pushButtonExit(_ sender: Any) {
+        player?.stop()
+        gameOver()
     }
     
     @IBAction func pushButtonJump(_ sender: Any) {
@@ -69,6 +79,22 @@ class PlayViewController: UIViewController {
         imageWeaponBatman.isHidden = false
     }
     
+    var player: AVAudioPlayer?
+    
+    func playSound(tempSoundFileName: String) {
+        let url = Bundle.main.url(forResource: tempSoundFileName, withExtension: "mp3")!
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+            
+            player.prepareToPlay()
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
     func initializeTimers(){
         timerRun = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(run), userInfo: nil, repeats: false)
         
@@ -78,7 +104,7 @@ class PlayViewController: UIViewController {
        
         var timerCheckCollisionForAttackOnJoker = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(checkCollisionForAttackOnJoker), userInfo: nil, repeats: true)
         
-        var timerMoveJoker = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(moveJoker), userInfo: nil, repeats: true)
+        timerMoveJoker = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(moveJoker), userInfo: nil, repeats: true)
     }
     
     func startTimerRun(timeTemp: Double)-> Void {
@@ -109,7 +135,13 @@ class PlayViewController: UIViewController {
         timerAttack = nil
         imageWeaponBatman.isHidden = true
     }
-
+    
+    func stopTimerMoveJoker() {
+        guard timerMoveJoker != nil else { return }
+        timerMoveJoker?.invalidate()
+        timerMoveJoker = nil
+        imageJocker.isHidden = true
+    }
     
     func setHeroGif(tempImage: String) -> Void{
         imageBatman.loadGif(name: tempImage)
@@ -237,6 +269,8 @@ class PlayViewController: UIViewController {
                 imageHealthBarBatman.image = UIImage(named: "healthbar_25.png")
             }
             else if(healthBatman == 0){
+                player?.stop()
+                playSound(tempSoundFileName: "Joker_Laugh")
                 imageEndingScene.loadGif(name: "joker_kills_Batman")
                 startTimerGameOver(timeTemp: 6)
                 //gameOver()
@@ -250,6 +284,10 @@ class PlayViewController: UIViewController {
     }
     
     func gameOver(){
+        isGameOver = true
+        stopTimerAttack()
+        stopTimerRun()
+        stopTimerMoveJoker()
         imageEndingScene.isHidden = true
         imageGameOver.isHidden = false
         imageHealthBarBatman.isHidden = true
@@ -259,6 +297,7 @@ class PlayViewController: UIViewController {
         buttonJump.isHidden = true
         buttonPlayAgain.isHidden = false
         buttonAttack.isHidden = true
+        player?.stop()
     }
 }
 
