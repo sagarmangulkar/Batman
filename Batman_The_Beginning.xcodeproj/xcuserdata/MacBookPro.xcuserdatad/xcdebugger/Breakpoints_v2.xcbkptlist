@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Batman_The_Beginning/PlayViewController.swift"
-            timestampString = "515382491.991784"
+            timestampString = "515384402.631807"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "PlayViewController"
             landmarkType = "3">
          </BreakpointContent>

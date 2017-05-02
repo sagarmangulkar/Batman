@@ -85,7 +85,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="57554ED5-EBF8-4CD2-9C26-021883D5A7AE" id="LuJ-So-IRU">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="842D3235-FCCD-4EF3-A532-F9615CD5ABF5" id="LuJ-So-IRU">
                                         <rect key="frame" x="315" y="114" width="37" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -113,6 +113,10 @@
                                         <rect key="frame" x="126" y="228" width="44" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="blood2.png" id="Ldn-Gc-Fub">
+                                        <rect key="frame" x="80" y="203" width="108" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fWS-EK-Qan">
                                         <rect key="frame" x="204" y="198" width="272" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -125,15 +129,15 @@
                                         <rect key="frame" x="213" y="33" width="240" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="blood2.png" id="Ldn-Gc-Fub">
-                                        <rect key="frame" x="80" y="203" width="108" height="76"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="batman_weapon1.png" id="HPZ-h0-F9m">
+                                        <rect key="frame" x="498" y="18" width="116" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="OrZ-5o-rhj">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="210"/>
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -150,6 +154,7 @@
                         <outlet property="imageGameOver" destination="tXH-MR-RAs" id="2J6-rh-dZE"/>
                         <outlet property="imageHealthBarBatman" destination="FgM-77-2lM" id="CDX-yA-URg"/>
                         <outlet property="imageJocker" destination="gPM-2C-yM7" id="GWk-P1-zak"/>
+                        <outlet property="imagePowerWeapon" destination="HPZ-h0-F9m" id="GF7-nA-HG6"/>
                         <outlet property="imageRunningPlatform" destination="gwr-yB-A13" id="wFg-xN-mEI"/>
                         <outlet property="imageWeaponBatman" destination="eMG-3R-sR8" id="xxQ-xX-5Cv"/>
                         <outlet property="imageWhiteStrip" destination="LuJ-So-IRU" id="29p-Ik-Y4O"/>
@@ -161,7 +166,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="57554ED5-EBF8-4CD2-9C26-021883D5A7AE" width="272" height="868">
+        <image name="842D3235-FCCD-4EF3-A532-F9615CD5ABF5" width="272" height="868">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
